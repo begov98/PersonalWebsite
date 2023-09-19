@@ -1,0 +1,122 @@
+@media (max-width: 600px) {
+
+ .navigation{
+    display:none;
+ }
+
+ /* --------- */
+
+ .nav-gsm { 
+    display: flex;
+    list-style: none; 
+  }
+  .nav-gsm li { 
+    display: table-cell; 
+    position: relative; 
+    padding-top: 1.5vw;
+    font-size: 5vw;
+    font-weight: bold;
+    color: #fff;
+    padding-right: 3vw;
+
+  }
+  .nav-gsm i {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+  }
+
+ .container{
+    display: block;
+ }
+
+ .photo img{
+    position:relative;
+ }
+
+ .hello{
+    display: inline-block;
+    color: #fff;
+    margin: 6vw 8vw;
+    padding-top:6vw;
+  }
+
+  .hello h1{
+    color: rgb(126, 186, 255);
+    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 6vw;
+  }
+
+  .hello h2{
+    font-weight: bolder;
+    font-size: 6vw;
+  }
+
+  .hello h4{
+    font-weight: 800;
+    font-size: 3.6vw;
+  }
+
+  .stack{
+    margin-top: 1.5vw;
+    margin-bottom: 14vw;
+  }
+  .stack strong{
+    font-size: 4.6vw;
+    padding: 1.4vw;
+    font-weight: bolder;
+  }
+
+  .stack i{
+    font-size: 4.6vw;
+    padding: 1.4vw;
+  }
+
+  .footerContainer strong{
+    font-size: 2.1vw;
+    margin-left: 39vw;
+  }
+
+
+  /* BUTTON */
+
+  .glowing-btn {
+    cursor: pointer;
+    padding: 1vw 6vw;
+    border: 1vw solid var(--glow-color);
+    border-radius: 3vw;
+    perspective: 4vw;
+    font-size: 4.2vw;
+    letter-spacing: 3vw;
+  
+    -webkit-box-shadow: inset 0vw 0vw 2vw 0vw var(--glow-color),
+      0vw 0vw 2vw 0vw var(--glow-color);
+    -moz-box-shadow: inset 0vw 0vw 1vw 0vw var(--glow-color),
+      0vw 0vw 2vw 0vw var(--glow-color);
+    box-shadow: inset 0vw 0vw 1vw 0vw var(--glow-color),
+      0vw 0vw 2vw 0vw var(--glow-color);
+  }
+  
+  .glowing-txt {
+    margin-right: -0.2vw;
+    -webkit-text-shadow: 0 0 0.2vw hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.2vw hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.2vw hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  }
+
+  .glowing-btn::before {
+    filter: blur(9vw);
+  }
+  
+  .glowing-btn::after {
+    box-shadow: 0 0 6vw 0.2vw var(--glow-color);
+  }
+    
+  .glowing-btn:hover:before {
+    filter: blur(10vw);
+  }
+  
+}

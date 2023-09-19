@@ -9,6 +9,10 @@ body,html {
 
   /* Navigation bar */
 
+  .nav-gsm{
+    display: none;
+  }
+
   .navigation { 
     padding: 0; 
     list-style: none; 
