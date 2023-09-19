@@ -1,0 +1,355 @@
+body,html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #333333;
+    background-image: url(/photos/background.jpg);
+    background-size: 100vw;
+
+  }
+
+  /* Navigation bar */
+
+  .navigation { 
+    padding: 0; 
+    list-style: none; 
+    width: 1rem;
+    text-align: center;
+    display:inline;
+  }
+  .navigation li { 
+    display: table-cell; 
+    position: relative; 
+    padding-top: 0.75vw;
+    font-size: 1.2vw;
+    font-weight: bolder;
+  }
+  .navigation a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.3vw;
+    display: inline-block;
+    padding: 0.1vw 3vw;
+    position: relative;
+  }
+
+  .navigation hr{
+    margin-left: 3vw;
+    margin-right: 37vw;
+    opacity:30%;
+  }
+
+
+  .navigation a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navigation a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  /* Hello :) */
+
+  .container{
+    display: flex;
+  }
+
+  .hello{
+    display: inline-block;
+    color: #fff;
+    margin: 3vw 4vw;
+    padding-top:3vw;
+  }
+
+  .hello h1{
+    color: rgb(126, 186, 255);
+    -webkit-text-stroke: 0.1vw rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 3vw;
+  }
+
+  .hello h2{
+    font-weight: bolder;
+    font-size: 3vw;
+  }
+
+  .hello h4{
+    font-weight: 800;
+    font-size: 1.8vw;
+  }
+
+  .stack{
+    margin-top: 0.75vw;
+    margin-bottom: 7vw;
+  }
+  .stack strong{
+    font-size: 2.3vw;
+    padding: 0.7vw;
+    font-weight: bolder;
+  }
+
+  .stack i{
+    font-size: 2.3vw;
+    padding: 0.7vw;
+  }
+
+  .photo img{
+    position:absolute;
+    max-width: 41vw;
+    border-radius: 700px;
+    opacity: 100%;
+    margin-left: 5vw;
+  }
+
+  /* Text */
+
+hr{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1.75vw;
+    opacity:50%;
+
+}
+
+  .contentContainer{
+    margin-top: 6vw;
+    margin-bottom: 5vw;
+  }
+
+  .contentContainer h1{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+  }
+
+  .text{
+    color: #fff;
+    font-weight: 500;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+
+  /* Footer */
+
+  .footerContainer{
+    color: #fff;
+  }
+
+  .footerContainer strong{
+    margin-left: 69.5vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    font-size: 1.05vw;
+  }
+
+
+
+  /* Button */
+
+  :root {
+    --glow-color:rgb(126, 186, 255);
+  }
+
+  
+  .glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.5vw 3vw;
+    border: 0.5vw solid var(--glow-color);
+    border-radius: 1.5vw;
+    background: none;
+    perspective: 2vw;
+    font-family: "Raleway", sans-serif;
+    font-size: 2.1vw;
+    font-weight: 900;
+    letter-spacing: 1.5vw;
+  
+    -webkit-box-shadow: inset 0vw 0vw 1vw 0vw var(--glow-color),
+      0vw 0vw 1vw 0vw var(--glow-color);
+    -moz-box-shadow: inset 0vw 0vw 1vw 0vw var(--glow-color),
+      0vw 0vw 1vw 0vw var(--glow-color);
+    box-shadow: inset 0vw 0vw 1vw 0vw var(--glow-color),
+      0vw 0vw 1vw 0vw var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+  }
+  
+  .glowing-txt {
+    float: left;
+    margin-right: -0.1vw;
+    -webkit-text-shadow: 0 0 0.1vw hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.1vw hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.1vw hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(4.5vw);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 3vw 0.1vw var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(5vw);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
