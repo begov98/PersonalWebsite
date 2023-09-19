@@ -118,5 +118,9 @@
   .glowing-btn:hover:before {
     filter: blur(10vw);
   }
+
+  .contacts{
+    display: block;
+  }
   
 }
