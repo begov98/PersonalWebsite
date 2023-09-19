@@ -353,3 +353,66 @@ hr{
       opacity: 1;
     }
   }
+
+  /* Contacts page */
+
+  .contacts .card{
+    border: 1px solid gray;
+    width: 250px;
+    height: 235px;
+    border-radius: 5%;
+    background-color: darkgrey;
+    display: inline-block;
+    margin: 16px;
+    cursor: pointer;
+    transition: .5s ease;
+    opacity: 70%;
+  }
+
+  .contacts .card:hover{
+    transform: scale(1.125);
+    color: rgba(94, 94, 94, 0.9);
+    border-color: rgba(68, 68, 68, 0.9);
+    transition: .5s ease;  
+  }
+
+
+  .contacts .card h3{
+    color: #3d3d3d;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 18px;
+    margin-top: 15px;
+  }
+
+  .card hr{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1.75vw;
+    opacity:50%;
+  }
+
+  .card i{
+    font-size: 20px;
+  }
+
+
+  .contacts{
+    display: grid;
+    grid-template-columns: 14vw 14vw 14vw;
+    column-gap: 10vw;
+    margin-left: 14vw;
+    margin-top: 7vw;
+    margin-bottom: 6vw;
+
+  }
+
+  .contacts .card strong{
+    display:block;
+    color: #3d3d3d;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    position:relative;
+  }
